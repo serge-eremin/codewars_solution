@@ -1,0 +1,8 @@
+// https://www.codewars.com/kata/57e921d8b36340f1fd000059/train/javascript
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  let k = 1;
+  if (dolphin === true) k = 2;
+    if (pontoonDistance/youSpeed / k < sharkDistance/sharkSpeed) return 'Alive!';
+    return 'Shark Bait!'
+}
