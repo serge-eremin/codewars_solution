@@ -1,0 +1,14 @@
+function removeSmallest(numbers) {
+  if (numbers.length === 0) return [];
+  let arr1 = numbers.slice();
+  arr1.splice(arr1.indexOf(Math.min(...numbers)), 1)
+  return arr1;
+}
+
+
+/*
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
+*/
