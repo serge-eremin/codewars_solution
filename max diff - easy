@@ -1,0 +1,4 @@
+function maxDiff(l) {
+  if (l.length === 0 || l.length === 1) return 0;
+  return Math.max(...l) - Math.min(...l);
+};
