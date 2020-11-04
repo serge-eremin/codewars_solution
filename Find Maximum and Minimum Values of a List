@@ -1,0 +1,16 @@
+let min = function(list){
+  let min = list[0];
+  let k = 0
+  for (let i = 0; i < list.length; i++){
+    if (list[i] < min){
+      min = list[i];
+      k = i;
+    }
+  }
+    return list[k];
+}
+
+let max = function(list){
+    
+    return Math.max(...list);
+}
