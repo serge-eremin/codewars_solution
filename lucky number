@@ -1,0 +1,12 @@
+function isLucky(n) {
+  return ( String(n).split('').reduce((a, b) => a + b) % 9===0)? true: false; 
+}
+
+function isLucky(n) {
+  let str = String(n);
+  let sum = 0
+  for (let i = 0; i < str.length; i++){
+    sum = sum + str[i];
+  }
+ return (sum % 9 === 0)? true: false;
+}
