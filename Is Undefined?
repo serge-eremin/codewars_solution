@@ -1,0 +1,4 @@
+function isUndefined(v) {
+  if (v === undefined) return true;
+  return false;
+}
