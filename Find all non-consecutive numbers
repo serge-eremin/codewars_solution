@@ -1,0 +1,24 @@
+function allNonConsecutive (arr) {
+  let keys = []; 
+  let values = [];
+  let result = [];
+  for (let i = 0; i < arr.length-1; i++){
+    if (arr[i+1] - arr[i] > 1) {
+      keys.push(i+1);
+      values.push(arr[i+1]);      
+    }
+  }
+  for (let i = 0; i < keys.length; i++){
+    result.push({i: keys[i], n: values[i]})
+  }
+  return result
+}  
+ 
+ 
+function allNonConsecutive (arr){
+  var res = [];
+  for(let i=1; i<arr.length; i++) {
+    if(arr[i]-arr[i-1]!==1) res.push({i:i, n:arr[i]});
+  }
+  return res;
+}
