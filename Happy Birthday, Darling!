@@ -1,0 +1,10 @@
+function womensAge(n) {
+  let age = '';
+  if ( n % 2 === 0) age = (`${n}` + '?' + ' That\'s just 20, in base ' + `${Math.floor(n/2)}` + '!');
+  if ( n % 2 !== 0) age = (`${n}` + '?' + ' That\'s just 21, in base ' + `${Math.floor(n/2)}` + '!');
+  return age;
+}
+
+function womensAge(n) {
+  return `${n}? That's just ${20 + n % 2}, in base ${Math.floor(n / 2)}!`
+}
