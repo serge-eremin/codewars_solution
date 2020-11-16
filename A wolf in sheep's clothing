@@ -1,0 +1,16 @@
+function warnTheSheep(q) {
+for(let i = 0; i < q.length; i++){
+  if (q[q.length-1] === 'wolf') {
+    console.log(q.length-1);
+    return "Pls go away and stop eating my sheep";}
+  if (q[i] === 'wolf') {
+    console.log(i);
+    return `Oi! Sheep number ${(q.length-1 -i)}! You are about to be eaten by a wolf!`}
+}
+}
+
+
+function warnTheSheep(queue) {
+  const position = queue.reverse().indexOf('wolf');
+  return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
+}
