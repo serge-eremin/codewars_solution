@@ -1,0 +1,11 @@
+function yearDays(y){
+  if ( y % 400 === 0 && y % 100 === 0) return `${y} has 366 days`;
+  if ( y % 100 === 0 && y % 400 !== 0) return `${y} has 365 days`;
+  if ( y % 4 === 0) return `${y} has 366 days`;
+  else return `${y} has 365 days`;
+}
+
+
+function yearDays(year) {
+  return year + ' has ' + (!(year % 100) && year % 400 || year % 4 ? '365' : '366') + ' days';
+}
