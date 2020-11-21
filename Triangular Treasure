@@ -6,4 +6,10 @@ function triangular( n ) {
   return sum;
 }
 
+function triangular( n ) {
+   return (n > 0) ? ((n * n) + n) / 2 : 0;
+}
 
+function triangular( n ) {
+   return (n > 0) ? n * (n + 1) / 2 : 0;
+}
