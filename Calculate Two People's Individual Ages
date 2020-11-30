@@ -1,0 +1,9 @@
+function getAges(sum,dif){
+  if (sum < 0 || dif < 0 || (dif - sum) > 0) return null;
+  let age2 = (sum - dif) / 2;
+  let age1 = sum - age2
+  return (age2 > age1)? [age2, age1]: [age1, age2]
+}
+
+const getAges = (sum, difference) =>
+  sum < 0 || difference < 0 || sum < difference ? null : [(sum + difference) / 2, (sum - difference) / 2];
