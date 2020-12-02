@@ -1,0 +1,8 @@
+let filterLucky=x=>{
+  return x.filter(el => (String(el)).includes(7))
+}
+
+let filterLucky=x=>{
+  return x.filter(el => (el + '').includes(7))
+}
+
