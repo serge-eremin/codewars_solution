@@ -1,0 +1,10 @@
+var arrayLeaders = n => {
+ let sum = n.reduce((sum, el) => sum + el, 0);
+  arr =[];
+       for (let el of n){
+         sum -= el;
+         if(el > sum) arr.push(el);
+       }
+  return arr
+}
+
