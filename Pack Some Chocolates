@@ -1,0 +1,13 @@
+// return the number of small chocolates required to achieve the desired goal. 
+// Return -1 if the goal cannot be achieved 
+
+
+function makeChocolates(small, big, goal) {
+  
+  for (let i = big; i >= 0; i--){
+    for (let k = 0; k <= small; k++){
+      if (5 * i + 2 * k === goal) return k
+    }
+  }
+  return -1;
+}
