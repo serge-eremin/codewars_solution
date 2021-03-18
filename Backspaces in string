@@ -1,0 +1,14 @@
+function cleanString(s) {
+let res = []
+  for (let el of s){
+  if (el !== '#') {
+    res.push(el);
+  } else {
+    res.pop();
+  }
+} 
+  return res.join('')
+};
+
+
+// clean_string = s => s.split('').reduce((r, e) => e == '#' ? r.slice(0, -1) : r + e, '');
