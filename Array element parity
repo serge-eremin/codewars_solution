@@ -1,0 +1,5 @@
+function solve(arr){
+  return arr.find(el => arr[arr.indexOf(el)] + arr[arr.lastIndexOf(-el)] !== 0)
+};
+
+//const solve = array => array.find(value => !array.includes(-value))
