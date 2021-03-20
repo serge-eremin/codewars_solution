@@ -1,0 +1,16 @@
+function duplicates(arr) {
+  return arr.filter((el, i) => arr.indexOf(el) !== arr.lastIndexOf(el) && i === arr.indexOf(el, 1))
+}
+/*
+arr.filter((el, i) => i !== arr.indexOf(el)
+индекс первого вхождения не должен быть равен индексу текущего элемента
+
+i === arr.lastIndexOf(el)
+Далее из пары или более дубликатов выбираем то значение, которое имеет индекс последнего вхождения
+*/
+
+/*
+const duplicates = arr => [...new Set(arr.filter((el, i) => i !== arr.lastIndexOf(el)))];
+
+arr.filter((val, idx) => arr.indexOf(val) === idx && arr.lastIndexOf(val) !== idx);
+*/
