@@ -1,0 +1,13 @@
+function completeSeries(arr) {
+  let duplicateElement = arr.filter(el => arr.indexOf(el) !== arr.lastIndexOf(el))
+  let arr1 = []
+  if (duplicateElement.length !== 0) return [0]
+   else arr.sort((a, b) => a - b)
+  for (i = 0; i <= Math.max(...arr); i++) arr1.push(i)
+
+   return arr1
+}
+
+function completeSeries(arr) {
+    return new Set(arr).size === arr.length ? [...Array(Math.max(...arr)+1).keys()] : [0];
+}
