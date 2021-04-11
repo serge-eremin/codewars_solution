@@ -1,0 +1,5 @@
+function unique(arr) {
+  console.log(arr)
+ return arr.filter((el, i) => i === arr.indexOf(el))
+}
+
