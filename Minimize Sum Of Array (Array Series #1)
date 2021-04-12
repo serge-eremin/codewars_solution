@@ -1,0 +1,9 @@
+function minSum(arr) {
+  let res1 = []
+  const arr1 = arr.sort((a, b) => a - b)
+  for (let i = 0; i < arr.length/2; i++){
+    res1.push(arr1[i] * arr1[arr1.length-1-i])
+  }
+  return res1.reduce((a, b) => a + b)
+}
+
