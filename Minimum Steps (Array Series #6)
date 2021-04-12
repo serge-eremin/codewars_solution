@@ -1,0 +1,20 @@
+function minimumSteps(n, val){
+  const minMax = n.sort((a, b) => a - b)
+    let i = 0;
+    let res = 0;  
+    while(res < val){
+      res += minMax[i]
+      i++
+  }
+  return i -1
+}
+
+
+function minimumSteps(n, val){
+  const minMax = n
+  .sort((a, b) => a - b)
+  .filter((el, i) => (val = val -el) > 0)
+  .length
+    
+    return minMax
+}
