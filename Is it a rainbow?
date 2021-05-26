@@ -1,0 +1,4 @@
+function sortRainbow(color){ 
+  let rb = ['red','orange','yellow','green','blue','indigo','violet']
+  return color.length === 7? color.every((el, i) => el === rb[i]): false
+}
