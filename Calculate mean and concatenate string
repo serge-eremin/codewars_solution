@@ -1,0 +1,19 @@
+function mean(lst){
+  let a = []
+  let b = ''
+  
+  for (el of lst) {
+    if(el.match(/\d/)) {
+      a.push(Number(el))
+    } else {
+      b+=el
+    };
+  };
+  return [a.reduce((a, b) => a + b) / 10, b] 
+}
+
+function mean(a){
+  return [a.reduce((s,x)=>x==+x?s+ +x:s,0)/10,a.filter(x=>+x!=x).join``]
+}
+
+const mean=lst=>[lst.filter(a=>"0123456789".indexOf(a)!=-1).reduce((a,b)=>a+ +b,0)/10, lst.filter(a=>"0123456789".indexOf(a)==-1).join("")];
