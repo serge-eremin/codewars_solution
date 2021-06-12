@@ -1,0 +1,12 @@
+function howManySmaller(arr,n){
+  let temp = arr.map(el => +el.toFixed(2))
+  let count = 0
+  temp.forEach(el => {
+    if(el < n) count++
+  })
+  return count
+  }
+  
+function howManySmaller(arr,n){
+  return arr.filter(x => +x.toFixed(2) < n).length;
+}
